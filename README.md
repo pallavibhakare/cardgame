@@ -2,7 +2,7 @@
 Notes
 
 Description:
-This is a simple css3 animation game. 
+This is a css3 animation game. 
 As this game is made in css3, it will be playable in crome better. 
 This game is implimented for fun and learning purpose using an online Dino Game Toutirial
 
