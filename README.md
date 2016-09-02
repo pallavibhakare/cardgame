@@ -23,5 +23,7 @@ https://pallavibhakare.github.io/cardgame/
 Contact:
 
 Pallavi Bhakare
+
 Email: pallavibhakare19@gmail.com
+
 Mobile: (206) 519-2242
