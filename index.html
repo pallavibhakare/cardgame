@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<title>Spot and match it.</title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+
+<head></head>
+<body>
+	<section id="game_state">	
+		<p class="timer">Your Time starts now:<span class="game_score"></span></p>
+		<p id="reset"><a class="game_reset" href="">Reset</a></p>		
+	</section>
+	<section id="game">
+		<section id="game_intro">
+			<p id="text">Match<br> it!</p>
+			<p><a id="play_game" class="play_button" 	href="">Play</a></p>			
+		</section>
+		<section id="game_complete">
+			<p id="text">Well<br> Done!</p>
+			<p id="top">Your time taken was "<span class="game_score"></span>".</p>
+			<p id="again"><a class="game_reset button" href="">Play again</a></p>			
+		</section>
+		<section id="cards">
+			<div class="card">
+				<div class="face front"></div>
+				<div class="face back"></div>
+			</div>
+		</section>
+	</section>
+	<section id="game_state_end">	
+			<p id="home"><a class="home_button" href="index.html" title="Go to Home Page">Home</a></p>			
+	</section>
+	
+	<script src="js/jquery-1.7.min.js"></script>
+    <script src="js/match.js"></script>
+	
+</body>
+</html>

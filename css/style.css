@@ -1,0 +1,206 @@
+body{ margin: 0px auto; background-image: url(../images/bg_img.jpg);background-size: cover;
+}
+section#game_state {
+    width: 800px;
+    margin: 22px auto;
+    border-radius: 4px;
+    border: 1px solid #150227;
+    padding: 10px;
+    display: block;
+    overflow: auto;
+    background: #310552;
+    box-shadow: 0px 3px 8px #000;
+    color: #fff;
+    opacity: 0.75;
+}
+#game_state p#reset a.game_reset {
+    font-size: 12px;
+    padding: 5px 10px;
+}
+section#game_state_end {
+	width: 800px;
+    margin: 22px auto;
+    border-radius: 4px;
+    border: 1px solid #150227;
+    padding: 10px;
+    display: block;
+    overflow: auto;
+    background: #310552;
+    box-shadow: 0px 3px 8px #000;
+    color: #fff;
+    opacity: 0.75;
+}
+
+#game_state p.timer {
+    float: left;
+    width: 350px;
+    margin: 0px;
+    text-align: left;
+}
+#game_state p#reset {
+    float: right;
+    text-align: right;
+    width: 400px;
+	margin:0px;
+}
+a.game_reset {
+    background-color: lightskyblue;
+    border: 3px solid #01a99a;
+    border-radius: 5px;
+    color: #fff;
+    padding: 5px 24px;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+a.game_reset:hover{background-color: #01a99a;}
+
+section#game{
+    width: 736px;
+    height: 476px;
+    margin: 0px auto;
+    /*background: #01a99a;*/
+    border: 20px solid #48544c;
+    border-radius: 4px;
+    padding: 20px;
+    display: block;
+	background-image: url(../images/play_bg1.png);
+	    background-size: cover;
+}
+section#game_intro {
+    padding: 20px 0px;
+}
+section#game_intro p {
+    margin: 0px auto;
+    text-align: center;
+}
+a#play_game:hover{background-color: #01a99a;}
+a#play_game{ background-color: lightskyblue;
+    border: 3px solid #01a99a;
+    border-radius: 5px;
+    color: #fff;
+    padding: 5px 30px;
+    text-decoration: none;
+    font-size: 33px;
+    font-weight: bold;
+    font-family: sans-serif;}
+p#text {
+    color: black;
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    font-size: 95px;
+    margin: 0px auto;
+    text-align: center;
+    font-family: cursive;
+    text-shadow: 2px 2px 4px #fff;
+   
+}	
+/*pallavi*/
+
+#game_Complete a.button {
+    background: white;
+    border-radius: 5px;
+    display: block;
+    font-size: 30px;
+    margin: 50px auto 0;
+    padding: 10px;
+    width: 150px;
+    border: 5px solid #006438;
+    color: #006438;
+    text-decoration: none;
+}
+#game_complete p#top {
+    margin: 35px 0px 0px 0px;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    -webkit-text-stroke: 1px;
+}
+#game_complete p#again, p#home{text-align:center;}
+a.home_button {
+    border: 1px solid #fff;
+    background: darkcyan;
+    color: #fff;
+    padding: 5px 14px;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: bold;
+	position: relative;
+    animation-name: example;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes example{
+	0% {left:0px;}
+	50%{left:40px;}
+	100%{left:0px;}
+}
+#cards {
+    position: relative;
+    width: 760px;
+    height: 480px;
+    display: none;
+}
+.card {
+    -webkit-perspective: 600;
+    width: 106px;
+    height: 145px;
+    position: absolute;
+    -moz-transition: all .3s;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    cursor: pointer;
+}
+.front {
+    background: url(../images/deck.jpg) 0 -146px;
+    z-index: 10;
+}
+
+.face {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    -webkit-transition-property: opacity, transform, box-shadow;
+    -webkit-transition-duration: .3s;
+    -webkit-backface-visibility: hidden;
+}
+.front {
+	background: url(../images/deck.jpg) 0 -146px;
+	z-index: 10;
+}
+.back {
+	background: #efefef url(../images/deck.jpg);
+	-webkit-transform: rotate3d(0,1,0,-180deg);
+	z-index: 8;
+}
+.card:hover .face, .card-flipped .face {
+	-webkit-box-shadow: 0 0 10px #aaa;
+}
+.card-flipped .front {
+	-webkit-transform: rotate3d(0,1,0,180deg);
+	z-index: 8;
+}
+.card-flipped .back {
+	-webkit-transform: rotate3d(0,1,0,0deg);
+	z-index: 10;
+}
+.card-removed {
+	opacity: 0;
+}
+.po {background-position: 0 0;}
+.shifu {background-position: -110px 0;}
+.tigress {background-position: -231px 2px;}
+.mantis {background-position: -330px 0;}
+.viper {background-position: -440px 0;}
+.ping {background-position: -550px 0;}
+.oogway {background-position: -660px 0;}
+.monkey {background-position: -770px 0;}
+.li_shan {background-position: -876px 4px;}
+
+section#game_intro p:first-child {
+    margin-bottom: 45px;
+}
